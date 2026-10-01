@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu primeiro formulário</title>
+  </head>
+  <body class="bg-light d-flex flex-column align-items-center pt-5" style="min-height: 100vh;">
+    
+    <h2 class="mb-4 text-primary text-center">Formulário de Cadastro</h2>
+    
+    <form class="bg-white p-4 rounded shadow-sm w-100" style="max-width: 500px;">
+      <div class="mb-3">
+        <label class="form-label text-muted fw-bold">Nome Completo</label>
+        <input type="text" class="form-control" placeholder="Digite seu nome" />
+      </div>
+      
+      <div class="mb-3">
+        <label class="form-label text-muted fw-bold">E-mail</label>
+        <input type="email" class="form-control" placeholder="exemplo@email.com" />
+      </div>
+      
+      <div class="mb-3">
+        <label class="form-label text-muted fw-bold">Senha</label>
+        <input type="password" class="form-control" placeholder="Crie uma senha" />
+      </div>
+      
+      <div class="mb-3">
+        <label class="form-label text-muted fw-bold">Estado</label>
+        <select class="form-select">
+          <option selected disabled>Selecione...</option>
+          <option>Acre (AC)</option>
+          <option>Alagoas (AL)</option>
+          <option>Amapá (AP)</option>
+          <option>Amazonas (AM)</option>
+          <option>Bahia (BA)</option>
+          <option>Ceará (CE)</option>
+          <option>Distrito Federal (DF)</option>
+          <option>Espírito Santo (ES)</option>
+          <option>Goiás (GO)</option>
+          <option>Maranhão (MA)</option>
+          <option>Mato Grosso (MT)</option>
+          <option>Mato Grosso do Sul (MS)</option>
+          <option>Minas Gerais (MG)</option>
+          <option>Pará (PA)</option>
+          <option>Paraíba (PB)</option>
+          <option>Paraná (PR)</option>
+          <option>Pernambuco (PE)</option>
+          <option>Piauí (PI)</option>
+          <option>Rio de Janeiro (RJ)</option>
+          <option>Rio Grande do Norte (RN)</option>
+          <option>Rio Grande do Sul (RS)</option>
+          <option>Rondônia (RO)</option>
+          <option>Roraima (RR)</option>
+          <option>Santa Catarina (SC)</option>
+          <option>São Paulo (SP)</option>
+          <option>Sergipe (SE)</option>
+          <option>Tocantins (TO)</option>
+        </select>
+      </div>
+
+      <div class="d-flex justify-content-between mt-4">
+        <button type="reset" class="btn btn-outline-secondary px-4">Limpar</button>
+        <button type="submit" class="btn btn-primary px-4">Enviar</button>
+      </div>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .preco {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #27ae60;
+      }
+
+      .promocao {
+        background: #f1c40f;
+        color: #000;
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+      }
+
+      /* Nova classe para padronizar as imagens dentro da área amarela */
+      .img-card {
+        width: 100%;
+        height: 200px;
+        object-fit: cover; /* Ajusta a imagem sem distorcer */
+        border-radius: 8px;
+        margin-top: 10px; /* Espaço entre o emoji e a imagem */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <span class="navbar-brand">🍔 LANCHONETE DI JOÃO</span>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <h2 class="text-center mb-4">Nosso Cardápio</h2>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <div class="bg-warning text-center p-4">
+              <div>🍔</div>
+              <img
+                src="Hamburguer-Caseiro-500x375.jpeg"
+                alt="Hamburguer Simples"
+                class="img-card"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Hamburguer Simples</h5>
+              <p class="card-text">Pão, hambúrguer, alface e tomate</p>
+              <span class="preco">R$ 15,90</span>
+              <button class="btn btn-success w-100 mt-3">Pedir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 border-warning">
+            <div class="bg-warning text-center p-4 position-relative">
+              <span class="promocao position-absolute top-0 end-0 mt-2 me-2"
+                >🔥 PROMOÇÃO</span
+              >
+              <div>🍔🍔</div>
+              <img
+                src="hamburguer-duplo.jpg"
+                alt="Hamburguer Duplo"
+                class="img-card"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Hamburguer Duplo</h5>
+              <p class="card-text">Dois hambúrgueres, queijo, bacon</p>
+              <span class="preco">R$ 25,90</span>
+              <button class="btn btn-success w-100 mt-3">Pedir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <div class="bg-warning text-center p-4">
+              <div>🍟</div>
+              <img src="batata.jpg" alt="Batata Frita" class="img-card" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Batata frita</h5>
+              <p class="card-text">Porção média com cheddar e bacon</p>
+              <span class="preco">R$ 13,90</span>
+              <button class="btn btn-success w-100 mt-3">Pedir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <div class="bg-warning text-center p-4">
+              <div>🥤</div>
+              <img src="Refrigerante.png" alt="Refrigerante" class="img-card" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Refrigerante</h5>
+              <p class="card-text">Lata 350ml - diversos sabores</p>
+              <span class="preco">R$ 6,90</span>
+              <button class="btn btn-success w-100 mt-3">Pedir</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <div class="bg-warning text-center p-4">
+              <div>🍨</div>
+              <img src="sorvete.webp" alt="sorvete" class="img-card" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Sorvete</h5>
+              <p class="card-text">barco de sorevete   - diversos sabores</p>
+              <span class="preco">R$ 16,90</span>
+              <button class="btn btn-success w-100 mt-3">Pedir</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <div class="bg-warning text-center p-4">
+              <div>🍺</div>
+              <img src="chopp.avif" alt="chopp" class="img-card" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Chopps</h5>
+              <p class="card-text">copão de chopp (1 litraço) - diversos sabores</p>
+              <span class="preco">R$ 12,90</span>
+              <button class="btn btn-success w-100 mt-3">Pedir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

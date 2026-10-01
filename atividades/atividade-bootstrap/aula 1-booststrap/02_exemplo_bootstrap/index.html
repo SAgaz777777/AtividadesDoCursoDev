@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Bootstrap</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .minha-classe {
+        /* Suas modificações aqui */
+      }
+      .card {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container mt-5">
+      <div class="alert alert-success">🎉 Parabéns! Bootstrap funcionando!</div>
+      
+      <button class="btn btn-success">Botão Profissional</button>
+      
+      <hr>
+
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#meuModal">
+        Abrir Modal de Aviso
+      </button>
+
+      <div class="card" style="width: 18rem;">
+        <img src="nao grita.jpg" class="card-img-top" alt="Imagem de aviso">
+        <div class="card-body">
+          <h5 class="card-title">Não grita</h5>
+          <p class="card-text">Se gritar eu te espanco </p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meuModal">Clique aqui pra gritar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Atenção!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Você tentou gritar? 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vou ficar quieto</button>
+            <button type="button" class="btn btn-primary">Entendido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+/* Importação da Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+/* --- Global e Reset --- */
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FFD700;   /* Amarelo Ouro */
+    --secondary-color: #1A1A1A; /* Preto Carbono */
+    --accent-color: #FF0000;    /* Vermelho Hot */
+    --success-color: #28a745;   /* Verde Preço */
+    --validation-bg: #f8f9fa;   /* Fundo suave selos */
+    --dark-bg: #0D0D0D; 
+    --light-gray: #E5E5E5;
+}
+
+body {
+    background-color: var(--light-gray);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* --- Navbar e Header --- */
+.header-brand-color { 
+    background-color: var(--secondary-color) !important; 
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.nav-accent-color { 
+    background-color: var(--accent-color) !important; 
+}
+
+.logo-text {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.logo-text span {
+    color: var(--accent-color); /* HOT em vermelho */
+}
+
+.control-link {
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.control-link:hover {
+    color: var(--primary-color);
+}
+
+.badge-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: var(--primary-color);
+    color: #000;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+/* --- Cards de Produto --- */
+.toy-card {
+    border: none !important;
+    border-radius: 15px; /* Bordas um pouco mais retas para aspecto esportivo */
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.toy-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.2); /* Sombra avermelhada no hover */
+}
+
+.card-toy-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 15px;
+    background-color: #fff;
+}
+
+/* --- Informações de Preço e Selos --- */
+.new-price {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 900;
+    display: block;
+    margin: 5px 0;
+}
+
+.validation-box {
+    background-color: var(--validation-bg);
+    border-left: 5px solid var(--accent-color);
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.play-tips {
+    background-color: #333;
+    color: var(--primary-color);
+    padding: 4px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Botões --- */
+.btn-action-accent {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+    border-radius: 4px; /* Botão mais quadrado estilo "Racing" */
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 12px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-action-accent:hover {
+    background-color: #b30000 !important;
+    letter-spacing: 1px;
+}
+
+.btn-auth-pill {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 700;
+    padding: 8px 25px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-auth-pill:hover {
+    background-color: #fff;
+    color: var(--accent-color);
+}
+
+/* --- Rodapé --- */
+footer {
+    background-color: var(--dark-bg);
+    border-top: 5px solid var(--accent-color);
+    color: #ffffff; /* Define a cor padrão do texto como branco */
+    padding: 40px 0; /* Adicionei um padding para não ficar colado */
+}
+
+/* Garante que títulos dentro do footer fiquem visíveis */
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    color: var(--primary-color); /* Títulos em Amarelo Ouro para destaque */
+    margin-bottom: 15px;
+}
+
+/* Estiliza os parágrafos e textos simples */
+footer p, footer span, footer div {
+    color: var(--light-gray); /* Um cinza bem claro para leitura confortável */
+}
+
+/* Estiliza os links do rodapé */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: var(--primary-color); /* Link brilha em amarelo ao passar o mouse */
+    text-decoration: underline;
+}
+
+/* Se você usa listas (ul/li) no rodapé */
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.8); 
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid var(--accent-color);
+}
+
+
+@media (max-width: 768px) {
+    .carousel-item img { height: 300px; }
+    .logo-text { font-size: 1.4rem; }
+}

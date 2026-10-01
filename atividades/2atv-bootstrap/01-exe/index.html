@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Painel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="alert alert-primary text-center">
+        <h1>🚀 Painel de Controle <span class="badge bg-danger">Novo</span></h1>
+        <p>Perfil do Usuário: 65% completo</p>
+        <div class="progress" style="height: 25px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%">65%</div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalCadastro">
+            Abrir Modal de Cadastro
+        </button>
+    </div>
+
+    <div class="modal fade" id="modalCadastro" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cadastro de Usuário</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" data-bs-toggle="tooltip" data-bs-placement="right" title="Digite seu nome sem abreviações">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">telefone</label>
+                            <input type="email" class="form-control" data-bs-toggle="tooltip" data-bs-placement="right" title="Ex: 11 98765-5789">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">estado</label>
+                            <input type="email" class="form-control" data-bs-toggle="tooltip" data-bs-placement="right" title="Ex:São Paulo">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">E-mail</label>
+                            <input type="email" class="form-control" data-bs-toggle="tooltip" data-bs-placement="right" title="Ex: usuario@email.com">
+                        </div>
+                       
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Inicializar Tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+</body>
+</html>

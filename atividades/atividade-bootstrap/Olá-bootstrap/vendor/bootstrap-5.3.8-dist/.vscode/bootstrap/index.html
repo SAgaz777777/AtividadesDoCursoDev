@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olá, Bootstrap - Download</title>
+<!-- Bootstrap CSS (local) -->
+<link rel="stylesheet" href="vendor/bootstrap-5.3.x-dist/css/bootstrap.min.css">
+<style>
+/* Pequena personalização para mostrar que podemos */
+.offline-badge {
+background-color: #ffc107;
+color: #000;
+padding: 5px 10px;
+border-radius: 20px;
+font-size: 0.9rem;
+}
+</style>
+</head>
+<body>
+<div class="container mt-5">
+<div class="alert alert-warning text-center position-relative">
+<span class="offline-badge position-absolute top-0 start-0 mt-2 ms-2">📥
+MODO OFFLINE</span>
+<h1 class="mt-3">🚀 Olá, Bootstrap!</h1>
+<p>Este site está usando Bootstrap via DOWNLOAD LOCAL</p>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card border-warning">
+<div class="card-header bg-warning">
+<strong>Informação importante:</strong>
+</div>
+
+<div class="card-body">
+<h5 class="card-title">📁 Arquivos locais</h5>
+<p class="card-text">
+Os arquivos do Bootstrap estão na pasta:<br>
+<code>vendor/bootstrap-5.3.0-dist/</code>
+</p>
+<p class="text-success">✅ Funciona mesmo sem internet!</p>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">📦 O que baixamos?</h5>
+<ul class="list-group">
+<li class="list-group-item">CSS completo e minificado</li
+>
+<li class="list-group-item">JavaScript com todos os plugi
+ns</li>
+<li class="list-group-item">Source maps para debug</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Teste de componente interativo -->
+<div class="mt-4 text-center">
+<button class="btn btn-warning" type="button" data-bs-toggle="collapse" d
+ata-bs-target="#infoOffline">
+Clique para ver detalhes
+</button>
+<div class="collapse mt-3" id="infoOffline">
+<div class="card card-body">
+Este é um componente JavaScript do Bootstrap funcionando localmen
+te!
+O arquivo <code>bootstrap.bundle.min.js</code> inclui todos os pl
+ugins necessários.
+</div>
+</div>
+
+</div>
+</div>
+<!-- Bootstrap JS (local) -->
+<script src="vendor/bootstrap-5.3.x-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
